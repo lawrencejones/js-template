@@ -1,13 +1,9 @@
-dependencies:
-  pre:
-    - npm install -g jspm jshint gulp
-
 machine:
   node:
     version: '4.2.2'
 
 test:
   override:
-    - gulp compile
-    - gulp lint
-    - gulp karma
+    - ./node_modules/.bin/gulp compile
+    - ./node_modules/.bin/gulp lint
+    - ./node_modules/.bin/gulp karma
