@@ -8,8 +8,8 @@ System.config({
     ]
   },
   paths: {
-    "github:*": "../jspm_packages/github/*",
-    "npm:*": "../jspm_packages/npm/*"
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
   },
   baseUrl: "/",
 
@@ -19,6 +19,7 @@ System.config({
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
+    "pegjs": "npm:pegjs@0.9.0",
     "systemjs": "npm:systemjs@0.19.22",
     "text": "github:systemjs/plugin-text@0.0.7",
     "traceur": "github:jmcriffey/bower-traceur@0.0.93",
@@ -65,6 +66,9 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:path-browserify@0.0.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:pegjs@0.9.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:process@0.11.2": {

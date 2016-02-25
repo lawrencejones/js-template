@@ -1,0 +1,13 @@
+dependencies:
+  post:
+    - npm install -g jshint gulp
+    - npm install
+
+machine:
+  node:
+    version: '4.2.2'
+
+test:
+  override:
+    - gulp lint
+    - gulp karma
