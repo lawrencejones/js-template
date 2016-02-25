@@ -1,6 +1,6 @@
 dependencies:
-  post:
-    - npm install -g jshint gulp
+  pre:
+    - npm install -g jspm jshint gulp
     - npm install
 
 machine:

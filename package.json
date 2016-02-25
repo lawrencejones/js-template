@@ -12,6 +12,7 @@
   "author": "lawrencejones <lawrjone@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.5.0",
     "babel-preset-es2015": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
