@@ -33,13 +33,12 @@ module.exports = function(config) {
     jspm: {
       config: 'system.config.js',
       packages: 'jspm_packages',
-      loadFiles: ['client/**/*.spec.js'],
-      serveFiles: ['client/**/**'],
+      loadFiles: ['dist/**/*.spec.js'],
+      serveFiles: ['dist/**/**'],
     },
 
     proxies: {
       '/base/client': '/base/dist',
-      '/base/common': '/base/dist/common',
       '/jspm_packages': '/base/jspm_packages',
     },
 
@@ -48,19 +47,6 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_INFO,
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-      'client/**/*.js': ['babel']
-    },
-
-	  'babelPreprocessor': {
-      options: {
-        sourceMap: 'inline',
-        plugins: ['transform-es2015-modules-systemjs'],
-      }
-    },
+    logLevel: config.LOG_INFO
   });
 };

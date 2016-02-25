@@ -11,7 +11,7 @@ const stylish     = require('jshint-stylish');
 
 const config = {
   output: 'dist/',                                       // output directory for compiled assets
-  jsSource: ['!client/**/*.spec.js', 'client/**/*.js'],  // client javascript
+  jsSource: ['client/**/*.js'],                          // client javascript
   json: 'client/**/*.json',                              // client json
   pegjs: 'client/**/*.pegjs',                            // client pegjs
   html: 'client/**/*.html',                              // client html
@@ -55,7 +55,7 @@ taskMaker.defineTask('browserSync', {
   },
 });
 
-gulp.task('karma', (cb) => {
+gulp.task('karma', ['recompile'], (cb) => {
   new KarmaServer({
     configFile: path.join(__dirname, config.karmaConfig),
     singleRun: true,
