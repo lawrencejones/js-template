@@ -1,7 +1,6 @@
 dependencies:
   pre:
     - npm install -g jspm jshint gulp
-    - npm install
 
 machine:
   node:
@@ -9,5 +8,6 @@ machine:
 
 test:
   override:
+    - gulp compile
     - gulp lint
     - gulp karma

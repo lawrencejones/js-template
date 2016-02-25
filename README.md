@@ -1,4 +1,4 @@
-# JS Template ![Build Status](https://circleci.com/gh/lawrencejones/js-template)
+# JS Template ![Build Status](https://circleci.com/gh/lawrencejones/js-template.png)
 
 Uses SystemJS and JSPM to bootstrap an Angular SPA with UI-Router. Configured
 for lint/testing on Circle CI.
