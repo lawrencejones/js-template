@@ -19,6 +19,7 @@ System.config({
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
+    "lookfirst/oclazyload-systemjs-router": "github:lookfirst/oclazyload-systemjs-router@1.2.2",
     "pegjs": "npm:pegjs@0.9.0",
     "systemjs": "npm:systemjs@0.19.22",
     "text": "github:systemjs/plugin-text@0.0.7",
@@ -39,6 +40,12 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
+    },
+    "github:lookfirst/oclazyload-systemjs-router@1.2.2": {
+      "angular": "github:angular/bower-angular@1.5.0",
+      "angular-ui-router": "github:angular-ui/ui-router@0.2.18",
+      "oclazyload": "github:ocombe/ocLazyLoad@1.0.9",
+      "ui-router-extras": "github:christopherthielen/ui-router-extras@0.0.13"
     },
     "github:twbs/bootstrap@3.3.6": {
       "jquery": "github:components/jquery@2.2.1"
